@@ -17,6 +17,17 @@ ROS Melodic
 
 Visual Studio code
 
+## build
+
+catkin_make
+
+## run
+```
+
+roslaunch uuvfloat_gazebo start_demo_pid_controller.launch 
+
+```
+
 ## License
 
 Apache
