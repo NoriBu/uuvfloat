@@ -8,6 +8,8 @@ based on simulation evironment developed in EU SWARM project
 [more info](https://uuvsimulator.github.io)
 [SWARM](http://swarms.eu/index.html)
 
+
+
 ## installation
 
 Ubuntu 18.04
@@ -19,7 +21,20 @@ Visual Studio code
 
 ## build
 
-catkin_make
+do
+```
+
+ git clone https://github.com/uuvsimulator/uuv_simulation_evaluation.git 
+```
+to your workspace and then 
+
+```
+
+sudo apt install ros-melodic-uuv-simulator
+
+
+catkin build
+```
 
 ## run
 ```
