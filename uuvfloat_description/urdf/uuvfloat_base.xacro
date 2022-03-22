@@ -43,18 +43,6 @@
             <cylinder radius="0.15" length="1.3" />
           </geometry>
         </visual>
-        <visual name="antenna_visual">
-          <origin xyz="0 0 0" rpy=" 0 0 1.5707" />
-          <geometry>
-            <cylinder radius="0.05" length="0.3" />
-          </geometry>
-        </visual>
-        <visual name="amodem_visual">
-          <origin xyz="0 0 0" rpy=" 0 0 1.5707" />
-          <geometry>
-            <cylinder radius="0.1" length="0.3" />
-          </geometry>
-        </visual>
       </xacro:if>
       <!-- This visual geometry representation can be used when running
            tasks in which you need Gazebo to start quickly
