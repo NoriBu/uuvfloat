@@ -29,13 +29,13 @@
 
   <xacro:macro name="uuvfloat_base" params="namespace *gazebo use_simplified_mesh inertial_reference_frame">
     <!-- Defining base link according to ROS conventions: x forward, z up -->
+    <provideFeedback>True</provideFeedback>
     <link name="${namespace}/base_link">
       <inertial>
         <mass value="${mass}" />
         <origin xyz="0 0 0" rpy="0 0 0" />
         <inertia ixx="525.39" ixy="1.44" ixz="33.41" iyy="794.20" iyz="2.6" izz="691.23" />
       </inertial>
-
       <xacro:if value="${use_simplified_mesh}">
         <visual name="chassis_visual">
           <origin xyz="0 0 0" rpy=" 0 0 1.5707" />
